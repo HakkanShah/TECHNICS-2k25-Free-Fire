@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('bg2.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #00ffff; /* Neon cyan text */
+    text-align: center;
+}
+
+/* Success Message Container */
+.container {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.registration-success {
+    display: inline-block;
+    font-size: 2rem; /* Reduced size */
+    font-weight: bold;
+    padding: 3px 6px;
+    color: #f71111;
+    background: linear-gradient(90deg,  #009dff, #3de6fc, #009dff);
+    border-radius: 20px;
+    box-shadow: 0 0 10px #24eefd, 0 0 20px #7f00ff;
+    text-align: center;
+    letter-spacing: 2px;
+    animation: dimGlow 1s infinite alternate ease-in-out, shake 0.2s infinite alternate ease-in-out;
+}
+
+/* Dimming and Glowing Effect */
+@keyframes dimGlow {
+    0% {
+        box-shadow: 0 0 5px #ff007f, 0 0 15px #7f00ff;
+        opacity: 0.8;
+    }
+    100% {
+        box-shadow: 0 0 15px #ff007f, 0 0 30px #00ffff;
+        opacity: 1;
+    }
+}
+
+/* Shaking Effect */
+@keyframes shake {
+    0% { transform: rotate(-2deg); }
+    100% { transform: rotate(2deg); }
+}
+
+
+/* Semi-Transparent Box for h3 */
+.welcome {
+    font-size: 1rem;
+    color: #fff; /* White text */
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black box */
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 15px;
+    border: 2px solid rgba(0, 255, 255, 0.7); /* Neon cyan border */
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Glow effect */
+    text-shadow: 0 0 5px cyan;
+}
+
+/* Video Container */
+.video-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px #ff00ff; /* Glowing pink border */
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    border: 3px solid #00ffff; /* Cyan neon border */
+    border-radius: 10px;
+}
+
+/* Tap to Play Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    color: #0ff;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+    cursor: pointer;
+    text-shadow: 0 0 15px #0ff;
+    animation: flicker 1.5s infinite alternate;
+}
+
+/* Cyberpunk Button */
+button {
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    color: #000;
+    font-family: 'Orbitron', sans-serif;
+    border: 2px solid #ff00ff;
+    padding: 12px 25px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #00ffff, #ff00ff);
+    color: #fff;
+    box-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff;
+    transform: scale(1.1);
+}
+
+/* Cool Glowing Border Effect */
+@keyframes flicker {
+    0% { opacity: 0.8; text-shadow: 0 0 10px #0ff, 0 0 20px #ff00ff; }
+    100% { opacity: 1; text-shadow: 0 0 20px #0ff, 0 0 30px #ff00ff; }
+}
+
+/* Mobile View */
+@media (max-width: 400px) {
+    body {
+        background-size: cover;
+        background-attachment: scroll;
+    }
+
+    .container {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    .overlay {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+}

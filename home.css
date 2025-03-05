@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: url('bg1.png') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image fully covers the screen */
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+}
+
+/* Mobile View: 360x580 */
+@media (max-width: 400px) {
+    body {
+        background-size: 100% 100%; /* Stretches to fit mobile screen */
+        background-attachment: scroll; /* Prevents background from sticking */
+    }
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header Styling with Semi-Transparent Box */
+/* Header Styling with Semi-Transparent Box */
+header {
+    background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+    padding: 5px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px; /* Adjust as needed */
+    margin: auto;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: #0ff;
+    text-shadow: 0 0 20px rgb(244, 25, 204), 0 0 20px #0ff;
+    margin: 0;
+    padding: 5px 10px;
+}
+
+/* Video Section */
+.video-section video {
+    width: 50%;
+    border: 3px solid #f0f;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #f0f;
+}
+
+/* Rules Section */
+.rules-section {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(20, 20, 20, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 15px #0ff;
+}
+
+.rules-container {
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.rules-container ol {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.rules-container li {
+    padding: 10px;
+    border-bottom: 1px solid #00f;
+}
+
+/* Continue Button */
+.continue-btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background: linear-gradient(45deg, #0ff, #f0f);
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #0ff;
+    transition: 0.3s;
+}
+
+.continue-btn:hover {
+    box-shadow: 0 0 25px #f0f;
+    transform: scale(1.1);
+} 

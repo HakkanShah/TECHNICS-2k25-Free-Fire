@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Successful</title>
+    <link rel="stylesheet" href="success.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="registration-success">🎉Registered🎉</h1>
+        <h3 class="welcome">Welcome to the tournament.<br>Get ready for the battle!⚡</h3>
+
+        <!-- Tap to Play Overlay -->
+        <div id="overlay" class="overlay">
+            
+        </div>
+
+        <!-- Cyberpunk Styled Video -->
+        <div class="video-container">
+            <video id="successVideo">
+                <source src="Headshot.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- JavaScript for Interaction -->
+        <script>
+             document.addEventListener("DOMContentLoaded", () => {
+            const video = document.getElementById("successVideo");
+            const overlay = document.getElementById("overlay");
+
+            let playCount = 0;
+
+            // Wait for user interaction to play with sound
+            document.body.addEventListener("click", function startVideo() {
+                video.muted = false; // Enable sound
+                video.play();
+                overlay.style.display = "none"; // Hide overlay after interaction
+                document.body.removeEventListener("click", startVideo);
+            });
+
+            video.addEventListener("ended", () => {
+                playCount++;
+                if (playCount < 2) {
+                    video.play();
+                }
+            });
+        });
+        </script>
+
+        <!-- Back to Home Button -->
+        <a href="home.html"><button>Return to Home</button></a>
+    </div>
+
+</body>
+</html>
