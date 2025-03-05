@@ -1,1 +1,0 @@
-# TECHNICS-2k25-Free-Fire
