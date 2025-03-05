@@ -6,10 +6,15 @@ This is a stylish and interactive registration page for a Free Fire Tournament, 
 🚀 Features:
 
 ✅ Modern UI – Futuristic neon-inspired design with glowing effects.
+
 ✅ Responsive Design – Optimized for mobile and desktop views.
+
 ✅ Dynamic Input Effects – Input fields change color when typed in.
+
 ✅ Custom Animations – Smooth glowing, shaking, and scaling effects.
+
 ✅ Video Section – Engaging Meme Video for the tournament.
+
 ✅ Interactive Rules Section – Scrollable rules container with a semi-transparent background
 
 
