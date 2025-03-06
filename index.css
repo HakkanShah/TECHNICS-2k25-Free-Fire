@@ -21,29 +21,60 @@ body {
 .container {
     max-width: 800px;
     margin: auto;
-    padding: 20px;
+    padding: 8px;
+    text-align: center;
 }
 
-/* Header Styling with Semi-Transparent Box */
-/* Header Styling with Semi-Transparent Box */
+/* Header Styling */
 header {
-    background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
-    padding: 5px 15px;
+    background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 15px #0ff;
+    text-align: center;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    max-width: 300px; /* Adjust as needed */
+    justify-content: center;
+    max-width: 350px; /* Adjust width */
     margin: auto;
 }
 
-header h1 {
-    font-size: 1.5rem;
+header p {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    color: rgb(40, 0, 219);
+    text-shadow: 0 0 20px rgb(234, 255, 0), 0 0 20px rgb(19, 201, 241);
+    margin: 5px 0;
+}
+header h2 {
+    font-size: 1.8rem;
     color: #0ff;
-    text-shadow: 0 0 20px rgb(244, 25, 204), 0 0 20px #0ff;
+    text-shadow: 0 0 20px #f0f, 0 0 20px #0ff;
+    margin: 5px 0;
+}
+
+
+header h5 {
+    font-size: 1rem;
+    font-family: cursive;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgb(117, 235, 235);
     margin: 0;
-    padding: 5px 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 400px) {
+    header {
+        max-width: 90%;
+        padding: 10px;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+    header h5 {
+        font-size: 0.9rem;
+    }
 }
 
 /* Video Section */
@@ -57,26 +88,38 @@ header h1 {
 /* Rules Section */
 .rules-section {
     margin-top: 20px;
-    padding: 20px;
-    background: rgba(20, 20, 20, 0.8);
+    padding: 15px;
+    background: rgba(20, 20, 20, 0.9);
     border-radius: 10px;
     box-shadow: 0 0 15px #0ff;
+    text-align: left; /* Ensures text starts from the left */
 }
 
+/* Rules Container */
 .rules-container {
-    max-height: 200px;
-    overflow-y: auto;
+    max-height: 250px; /* Keeps scrolling effect */
+    overflow-y: auto; /* Enables vertical scrolling */
     padding: 10px;
+    text-align:left; /* Ensures proper text alignment */
 }
 
+/* List Styling */
 .rules-container ol {
-    text-align: left;
-    padding-left: 20px;
+    padding-left: 0; /* Removes extra padding */
+    list-style-position: inside; /* Keeps numbers inside the box */
 }
 
 .rules-container li {
-    padding: 10px;
+    padding: 4px 2px; /* Adds slight left padding */
     border-bottom: 1px solid #00f;
+}
+
+/* Mobile-friendly fix */
+@media (max-width: 600px) {
+    .rules-container {
+        max-height: 200px; /* Adjusts height for smaller screens */
+        overflow-y: auto; /* Ensures scrolling works */
+    }
 }
 
 /* Continue Button */
@@ -93,9 +136,10 @@ header h1 {
     border-radius: 5px;
     box-shadow: 0 0 15px #0ff;
     transition: 0.3s;
+    text-align: center;
 }
 
 .continue-btn:hover {
-    box-shadow: 0 0 25px #f0f;
+    box-shadow: 0 0 25px rgb(101, 72, 246);
     transform: scale(1.1);
-} 
+}

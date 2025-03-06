@@ -1,84 +1,92 @@
 /* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
 body {
     font-family: 'Orbitron', sans-serif;
     margin: 0;
     padding: 0;
     background: url('bg2.png') no-repeat center center fixed;
     background-size: cover;
-    color: #00ffff; /* Neon cyan text */
+    color: #00ffff;
     text-align: center;
 }
 
 /* Success Message Container */
 .container {
-    margin-top: 20px;
-    font-size: 1.2rem;
+    margin-top: 50px;
     padding: 20px;
     border-radius: 10px;
+    animation: fadeIn 1.5s ease-in-out;
 }
+
 
 .registration-success {
+    background: rgba(14, 16, 16, 0.6); /* Dark semi-transparent background */
     display: inline-block;
-    font-size: 2rem; /* Reduced size */
+    font-size: 3rem;
     font-weight: bold;
-    padding: 3px 6px;
-    color: #f71111;
-    background: linear-gradient(90deg,  #009dff, #3de6fc, #009dff);
+    padding: 10px 20px;
+    color: #ff0000;
     border-radius: 20px;
-    box-shadow: 0 0 10px #24eefd, 0 0 20px #7f00ff;
     text-align: center;
-    letter-spacing: 2px;
-    animation: dimGlow 1s infinite alternate ease-in-out, shake 0.2s infinite alternate ease-in-out;
+    letter-spacing: 3px;
+    animation: popupEffect 1.5s infinite ease-in-out;
 }
-
-/* Dimming and Glowing Effect */
-@keyframes dimGlow {
+@keyframes popupEffect {
     0% {
-        box-shadow: 0 0 5px #ff007f, 0 0 15px #7f00ff;
-        opacity: 0.8;
+        transform: scale(1);
+        box-shadow: 0 0 15px #ff00ff, 0 0 30px #00ffff;
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 25px #ff00ff, 0 0 50px #00ffff;
     }
     100% {
-        box-shadow: 0 0 15px #ff007f, 0 0 30px #00ffff;
-        opacity: 1;
+        transform: scale(1);
+        box-shadow: 0 0 15px #ff00ff, 0 0 30px #00ffff;
     }
 }
 
-/* Shaking Effect */
-@keyframes shake {
-    0% { transform: rotate(-2deg); }
-    100% { transform: rotate(2deg); }
+
+/* Glowing Effect */
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+    }
+    100% {
+        box-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff;
+    }
 }
 
-
-/* Semi-Transparent Box for h3 */
+/* Welcome Message */
 .welcome {
+    background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
     font-size: 1rem;
-    color: #fff; /* White text */
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black box */
-    padding: 15px 20px;
-    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
     display: inline-block;
-    margin-top: 15px;
-    border: 2px solid rgba(0, 255, 255, 0.7); /* Neon cyan border */
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Glow effect */
-    text-shadow: 0 0 5px cyan;
+    margin-top: 20px;
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 15px #00ffff;
+    text-shadow: 0 0 10px cyan;
 }
 
 /* Video Container */
 .video-container {
-    width: 90%;
+    width: 80%;
     max-width: 600px;
-    margin: 20px auto;
+    margin: 30px auto;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 0 20px #ff00ff; /* Glowing pink border */
+    box-shadow: 0 0 25px #ff00ff;
+    animation: flicker 1.5s infinite alternate;
 }
 
 .video-container video {
     width: 100%;
-    height: auto;
-    border: 3px solid #00ffff; /* Cyan neon border */
-    border-radius: 10px;
+    border: 3px solid #00ffff;
+    border-radius: 15px;
 }
 
 /* Tap to Play Overlay */
@@ -88,16 +96,16 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.9);
     color: #0ff;
-    font-size: 24px;
+    font-size: 28px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     z-index: 10;
     cursor: pointer;
-    text-shadow: 0 0 15px #0ff;
+    text-shadow: 0 0 20px #0ff;
     animation: flicker 1.5s infinite alternate;
 }
 
@@ -107,11 +115,11 @@ button {
     color: #000;
     font-family: 'Orbitron', sans-serif;
     border: 2px solid #ff00ff;
-    padding: 12px 25px;
+    padding: 15px 30px;
     font-size: 1.5rem;
     cursor: pointer;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ff00ff, 0 0 30px #00ffff;
     transition: 0.3s ease-in-out;
     text-transform: uppercase;
     font-weight: bold;
@@ -120,34 +128,39 @@ button {
 button:hover {
     background: linear-gradient(45deg, #00ffff, #ff00ff);
     color: #fff;
-    box-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff;
+    box-shadow: 0 0 30px #ff00ff, 0 0 50px #00ffff;
     transform: scale(1.1);
 }
 
 /* Cool Glowing Border Effect */
 @keyframes flicker {
-    0% { opacity: 0.8; text-shadow: 0 0 10px #0ff, 0 0 20px #ff00ff; }
-    100% { opacity: 1; text-shadow: 0 0 20px #0ff, 0 0 30px #ff00ff; }
+    0% { opacity: 0.8; text-shadow: 0 0 15px #0ff, 0 0 25px #ff00ff; }
+    100% { opacity: 1; text-shadow: 0 0 25px #0ff, 0 0 40px #ff00ff; }
+}
+
+/* Fade In Effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* Mobile View */
-@media (max-width: 400px) {
-    body {
-        background-size: cover;
-        background-attachment: scroll;
+@media (max-width: 500px) {
+    .registration-success {
+        font-size: 2.5rem;
     }
-
-    .container {
-        font-size: 1rem;
-        padding: 15px;
+    .welcome {
+        font-size: 1.2rem;
     }
-
     .overlay {
-        font-size: 20px;
+        font-size: 22px;
     }
-
     button {
         font-size: 1.2rem;
-        padding: 10px 20px;
+        padding: 12px 25px;
     }
 }
