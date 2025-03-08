@@ -8,6 +8,15 @@
 </head>
 <body>
 
+    <!-- Pop-up Message -->
+    <div id="popup" class="popup">
+        <div class="popup-box">
+            <h2>Beta,Tumse Na Ho Payega!😜</h2>
+            <pre><i><b style="color: azure;">⚠️Registration is temporarily<br>closed⚠️</i></b>.<br>Tab tak ek cup chai pi lo!☕</pre>
+            <button id="closePopup">OK</button>
+        </div>
+    </div>
+
     <!-- Main Header -->
     <header>
         <h1>Register your team here</h1>
@@ -15,7 +24,6 @@
 
     <!-- Registration Form Container -->
     <div class="container">
-  
         <form>
             <!-- Team Details -->
             <div class="form-group">
@@ -32,39 +40,40 @@
                 <label for="contact">Contact No.:</label>
                 <input type="tel" id="contact" name="contact" required>
             </div>
+
             <br>
             <!-- Player Information -->
             <h3>Players Details</h3>
 
             <div class="player">
-                <label for="player1">Player 1: in-Game Name:</label>
+                <label for="player1">Player 1: In-Game Name:</label>
                 <input type="text" id="player1" name="player1" required>
 
-                <label for="uid1">Free fire UID:</label>
+                <label for="uid1">Free Fire UID:</label>
                 <input type="text" id="uid1" name="uid1" required>
             </div>
 
             <div class="player">
-                <label for="player2">Player 2: in-Game Name:</label>
+                <label for="player2">Player 2: In-Game Name:</label>
                 <input type="text" id="player2" name="player2" required>
 
-                <label for="uid2">Free fire UID:</label>
+                <label for="uid2">Free Fire UID:</label>
                 <input type="text" id="uid2" name="uid2" required>
             </div>
 
             <div class="player">
-                <label for="player3">Player 3: in-Game Name:</label>
+                <label for="player3">Player 3: In-Game Name:</label>
                 <input type="text" id="player3" name="player3">
 
-                <label for="uid3">Free fire UID:</label>
+                <label for="uid3">Free Fire UID:</label>
                 <input type="text" id="uid3" name="uid3">
             </div>
 
             <div class="player">
-                <label for="player4">Player 4: in-Game Name:</label>
+                <label for="player4">Player 4: In-Game Name:</label>
                 <input type="text" id="player4" name="player4">
 
-                <label for="uid4">Free fire UID:</label>
+                <label for="uid4">Free Fire UID:</label>
                 <input type="text" id="uid4" name="uid4">
             </div>
 
@@ -72,6 +81,21 @@
             <button type="submit">Register</button>
         </form>
     </div>
-    <script src="script.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const popup = document.getElementById("popup");
+            const closePopup = document.getElementById("closePopup");
+
+            // Close the pop-up when clicking the button
+            closePopup.addEventListener("click", () => {
+                popup.style.opacity = "0";  // Fade out effect
+                setTimeout(() => {
+                    popup.style.display = "none"; // Hide after transition
+                }, 400);
+            });
+        });
+    </script>
+
 </body>
 </html>

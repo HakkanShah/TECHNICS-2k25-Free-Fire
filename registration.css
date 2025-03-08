@@ -1,4 +1,4 @@
-
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -15,9 +15,82 @@ body {
     justify-content: center;
     min-height: 100vh;
     padding: 20px;
+    position: relative;
 }
 
-/* Header Styling */
+/* Full-Screen Pop-up with Dimming Effect */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Slightly transparent */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: opacity 0.4s ease-in-out;
+}
+
+/* Pop-up Box */
+.popup-box {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #2ffcff;
+    animation: fadeIn 0.5s ease-in-out;
+    width: 400px;
+    max-width: 90%;
+}
+
+/* Pop-up Heading */
+.popup-box h2 {
+    color: #fffb2c;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 15px #ff0000;
+}
+
+/* Pop-up Message */
+.popup-box p {
+    color: #24ffff;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Close Button */
+.popup-box button {
+    background: linear-gradient(45deg, #ff00ff, #00ffcc);
+    color: black;
+    font-size: 1rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px #00ffcc;
+    transition: 0.3s;
+}
+
+.popup-box button:hover {
+    background: linear-gradient(45deg, #00ffcc, #ff00ff);
+    box-shadow: 0px 0px 20px #ff00ff;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Registration Page Styles */
 header {
     text-align: center;
     margin-bottom: 20px;
@@ -39,14 +112,6 @@ h1 {
     max-width: 600px;
     width: 100%;
     text-align: center;
-}
-
-/* Section Titles */
-h2, h3 {
-    font-size: 1.5rem;
-    color: #ff00ff;
-    text-shadow: 0px 0px 10px #ff00ff;
-    margin-bottom: 15px;
 }
 
 /* Form Elements */

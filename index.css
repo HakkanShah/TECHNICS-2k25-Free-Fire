@@ -41,12 +41,14 @@ header {
 }
 
 header p {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 3rem;
-    color: rgb(40, 0, 219);
+    font-weight: bold;
+    color: rgb(23, 63, 204);
     text-shadow: 0 0 20px rgb(234, 255, 0), 0 0 20px rgb(19, 201, 241);
     margin: 5px 0;
 }
+
 header h2 {
     font-size: 1.8rem;
     color: #0ff;
@@ -59,7 +61,7 @@ header h5 {
     font-size: 1rem;
     font-family: cursive;
     color: #ffffff;
-    text-shadow: 0 0 10px rgb(117, 235, 235);
+    text-shadow: 0 0 10px rgb(119, 250, 83);
     margin: 0;
 }
 
@@ -79,10 +81,12 @@ header h5 {
 
 /* Video Section */
 .video-section video {
-    width: 50%;
+    width: 45%;
     border: 3px solid #f0f;
     border-radius: 10px;
     box-shadow: 0 0 20px #f0f;
+    overflow: hidden;
+    animation: flicker 1.5s infinite alternate;
 }
 
 /* Rules Section */

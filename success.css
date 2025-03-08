@@ -13,39 +13,36 @@ body {
 
 /* Success Message Container */
 .container {
+    background: no-repeat center center fixed;
     margin-top: 50px;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
-    animation: fadeIn 1.5s ease-in-out;
-}
-
-
-.registration-success {
-    background: rgba(14, 16, 16, 0.6); /* Dark semi-transparent background */
-    display: inline-block;
-    font-size: 3rem;
-    font-weight: bold;
-    padding: 10px 20px;
-    color: #ff0000;
-    border-radius: 20px;
+    max-width: 400px; /* Reduced the width */
+    width: 90%; /* Responsive */
     text-align: center;
-    letter-spacing: 3px;
-    animation: popupEffect 1.5s infinite ease-in-out;
 }
+
+/* Success Message Box */
+.registration-success {
+    background: rgba(22, 22, 20, 0.6); /* Semi-transparent background */
+    display: inline-block;
+    font-size: 1.5rem; /* Slightly smaller text */
+    font-weight: bold;
+    padding: 8px 12px;
+    color: #ff0505;
+    border-radius: 15px;
+    text-align: center;
+    letter-spacing: 1px;
+    animation: popupEffect 1s infinite ease-in-out;
+}
+
+/* Keyframe Animation for Effect */
 @keyframes popupEffect {
-    0% {
-        transform: scale(1);
-        box-shadow: 0 0 15px #ff00ff, 0 0 30px #00ffff;
-    }
-    50% {
-        transform: scale(1.1);
-        box-shadow: 0 0 25px #ff00ff, 0 0 50px #00ffff;
-    }
-    100% {
-        transform: scale(1);
-        box-shadow: 0 0 15px #ff00ff, 0 0 30px #00ffff;
-    }
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
+
 
 
 /* Glowing Effect */
@@ -63,8 +60,8 @@ body {
     background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
     font-size: 1rem;
     color: #fff;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 10px 14;
+    border-radius: 15px;
     display: inline-block;
     margin-top: 20px;
     border: 2px solid #00ffff;
@@ -74,8 +71,8 @@ body {
 
 /* Video Container */
 .video-container {
-    width: 80%;
-    max-width: 600px;
+    width: 70%;
+    max-width: 500px;
     margin: 30px auto;
     border-radius: 15px;
     overflow: hidden;
