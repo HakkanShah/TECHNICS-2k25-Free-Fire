@@ -13,8 +13,8 @@ body {
 /* Mobile View: 360x580 */
 @media (max-width: 400px) {
     body {
-        background-size: 100% 100%; /* Stretches to fit mobile screen */
-        background-attachment: scroll; /* Prevents background from sticking */
+        background-size: 100% 100%; 
+        background-attachment: scroll; 
     }
 }
 
