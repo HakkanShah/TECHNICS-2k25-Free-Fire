@@ -10,7 +10,6 @@ body {
     text-align: center;
 }
 
-/* Mobile View: 360x580 */
 @media (max-width: 400px) {
     body {
         background-size: 100% 100%; 
@@ -25,7 +24,6 @@ body {
     text-align: center;
 }
 
-/* Header Styling */
 header {
     background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
     padding: 15px;
@@ -65,7 +63,6 @@ header h5 {
     margin: 0;
 }
 
-/* Mobile Responsive */
 @media (max-width: 400px) {
     header {
         max-width: 90%;
@@ -79,7 +76,6 @@ header h5 {
     }
 }
 
-/* Video Section */
 .video-section video {
     width: 45%;
     border: 3px solid #f0f;
@@ -89,7 +85,6 @@ header h5 {
     animation: flicker 1.5s infinite alternate;
 }
 
-/* Rules Section */
 .rules-section {
     margin-top: 20px;
     padding: 15px;
@@ -99,7 +94,6 @@ header h5 {
     text-align: left; /* Ensures text starts from the left */
 }
 
-/* Rules Container */
 .rules-container {
     max-height: 250px; /* Keeps scrolling effect */
     overflow-y: auto; /* Enables vertical scrolling */
@@ -107,7 +101,6 @@ header h5 {
     text-align:left; /* Ensures proper text alignment */
 }
 
-/* List Styling */
 .rules-container ol {
     padding-left: 0; /* Removes extra padding */
     list-style-position: inside; /* Keeps numbers inside the box */
@@ -118,7 +111,6 @@ header h5 {
     border-bottom: 1px solid #00f;
 }
 
-/* Mobile-friendly fix */
 @media (max-width: 600px) {
     .rules-container {
         max-height: 200px; /* Adjusts height for smaller screens */
@@ -126,7 +118,6 @@ header h5 {
     }
 }
 
-/* Continue Button */
 .continue-btn {
     display: block;
     width: 200px;
