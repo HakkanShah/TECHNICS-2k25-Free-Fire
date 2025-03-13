@@ -89,12 +89,10 @@
             const overlay = document.getElementById("overlay");
 
             let playCount = 0;
-
-            // Wait for user interaction to play with sound
             document.body.addEventListener("click", function startVideo() {
                 video.muted = false; // Enable sound
                 video.play();
-                overlay.style.display = "none"; // Hide overlay after interaction
+                overlay.style.display = "none"; 
                 document.body.removeEventListener("click", startVideo);
             });
 
