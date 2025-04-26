@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Form Validation and Redirection
+    
     const registrationForm = document.querySelector("form");
 
     if (registrationForm) {
