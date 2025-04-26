@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (registrationForm) {
         registrationForm.addEventListener("submit", function (event) {
-            event.preventDefault(); // Stop default form submission
+            event.preventDefault(); 
 
             if (registrationForm.checkValidity()) {
                 window.location.href = "success.html"; 
