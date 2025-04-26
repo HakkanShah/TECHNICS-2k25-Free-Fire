@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Rules Section Hover Effect (Already present in your code)
+    
     const rulesSection = document.querySelector(".rules-container");
 
     if (rulesSection) {
