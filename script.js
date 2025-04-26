@@ -20,9 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
             event.preventDefault(); // Stop default form submission
 
             if (registrationForm.checkValidity()) {
-                window.location.href = "success.html"; // Redirect only if valid
+                window.location.href = "success.html"; 
             } else {
-                alert("Please fill in all required fields."); // Show error if invalid
+                alert("Please fill in all required fields."); 
             }
         });
     }
