@@ -77,7 +77,7 @@ body {
     box-shadow: 0px 0px 20px #ff00ff;
 }
 
-/* Fade-in Animation */
+
 @keyframes fadeIn {
     from {
         transform: scale(0.8);
