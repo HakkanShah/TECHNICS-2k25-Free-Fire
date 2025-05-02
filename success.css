@@ -22,11 +22,10 @@ body {
     text-align: center;
 }
 
-/* Success Message Box */
 .registration-success {
     background: rgba(22, 22, 20, 0.6); /* Semi-transparent background */
     display: inline-block;
-    font-size: 1.5rem; /* Slightly smaller text */
+    font-size: 1.5rem; 
     font-weight: bold;
     padding: 8px 12px;
     color: #ff0505;
