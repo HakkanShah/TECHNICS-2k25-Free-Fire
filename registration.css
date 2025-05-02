@@ -112,7 +112,6 @@ h1 {
     text-align: center;
 }
 
-/* Form Elements */
 form {
     display: flex;
     flex-direction: column;
