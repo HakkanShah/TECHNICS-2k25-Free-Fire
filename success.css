@@ -35,7 +35,6 @@ body {
     animation: popupEffect 1s infinite ease-in-out;
 }
 
-/* Keyframe Animation for Effect */
 @keyframes popupEffect {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
