@@ -52,7 +52,7 @@ body {
 }
 
 .welcome {
-    background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
+    background: rgba(0, 0, 0, 0.6); 
     font-size: 1rem;
     color: #fff;
     padding: 10px 14;
