@@ -51,7 +51,6 @@ body {
     }
 }
 
-/* Welcome Message */
 .welcome {
     background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
     font-size: 1rem;
@@ -65,7 +64,6 @@ body {
     text-shadow: 0 0 10px cyan;
 }
 
-/* Video Container */
 .video-container {
     width: 70%;
     max-width: 500px;
