@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-family: 'Orbitron', sans-serif;
     background: url('bg1.png') no-repeat center center fixed;
-    background-size: cover; /* Ensures the image fully covers the screen */
+    background-size: cover; 
     background-position: center;
     background-attachment: fixed;
     color: #fff;
@@ -25,7 +25,7 @@ body {
 }
 
 header {
-    background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
+    background: rgba(0, 0, 0, 0.6); 
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 15px #0ff;
@@ -34,7 +34,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 350px; /* Adjust width */
+    max-width: 350px; 
     margin: auto;
 }
 
