@@ -22,7 +22,7 @@ body {
 }
 
 .registration-success {
-    background: rgba(22, 22, 20, 0.6); /* Semi-transparent background */
+    background: rgba(22, 22, 20, 0.6); 
     display: inline-block;
     font-size: 1.5rem; 
     font-weight: bold;
