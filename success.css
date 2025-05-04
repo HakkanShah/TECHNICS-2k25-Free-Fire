@@ -121,7 +121,6 @@ button:hover {
     transform: scale(1.1);
 }
 
-/* Cool Glowing Border Effect */
 @keyframes flicker {
     0% { opacity: 0.8; text-shadow: 0 0 15px #0ff, 0 0 25px #ff00ff; }
     100% { opacity: 1; text-shadow: 0 0 25px #0ff, 0 0 40px #ff00ff; }
