@@ -126,7 +126,6 @@ button:hover {
     100% { opacity: 1; text-shadow: 0 0 25px #0ff, 0 0 40px #ff00ff; }
 }
 
-/* Fade In Effect */
 @keyframes fadeIn {
     from {
         opacity: 0;
