@@ -99,7 +99,6 @@ body {
     animation: flicker 1.5s infinite alternate;
 }
 
-/* Cyberpunk Button */
 button {
     background: linear-gradient(45deg, #ff00ff, #00ffff);
     color: #000;
