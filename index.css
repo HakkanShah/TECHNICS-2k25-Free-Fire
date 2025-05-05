@@ -103,7 +103,7 @@ header h5 {
 
 .rules-container ol {
     padding-left: 0; 
-    list-style-position: inside; /* Keeps numbers inside the box */
+    list-style-position: inside; 
 }
 
 .rules-container li {
