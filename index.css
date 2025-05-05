@@ -107,7 +107,7 @@ header h5 {
 }
 
 .rules-container li {
-    padding: 4px 2px; /* Adds slight left padding */
+    padding: 4px 2px; 
     border-bottom: 1px solid #00f;
 }
 
