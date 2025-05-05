@@ -95,7 +95,7 @@ header h5 {
 }
 
 .rules-container {
-    max-height: 250px; /* Keeps scrolling effect */
+    max-height: 250px; 
     overflow-y: auto; /* Enables vertical scrolling */
     padding: 10px;
     text-align:left; /* Ensures proper text alignment */
