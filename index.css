@@ -91,7 +91,7 @@ header h5 {
     background: rgba(20, 20, 20, 0.9);
     border-radius: 10px;
     box-shadow: 0 0 15px #0ff;
-    text-align: left; /* Ensures text starts from the left */
+    text-align: left; 
 }
 
 .rules-container {
