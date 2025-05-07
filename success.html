@@ -32,8 +32,8 @@
             document.body.addEventListener("click", function startVideo() {
                 video.muted = false; 
                 video.play();
-                overlay.style.display = "none"; // Hide overlay after interaction
-                document.body.removeEventListener("click", startVideo);
+                overlay.style.display = "none"; 
+     document.body.removeEventListener("click", startVideo);
             });
 
             video.addEventListener("ended", () => {
