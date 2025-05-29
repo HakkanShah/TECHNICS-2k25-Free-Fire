@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     
     const rulesSection = document.querySelector(".rules-container");
-
     if (rulesSection) {
         rulesSection.addEventListener("mouseover", function () {
             rulesSection.style.boxShadow = "0 0 25px #f0f";
