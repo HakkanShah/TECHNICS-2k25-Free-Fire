@@ -10,8 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
             rulesSection.style.boxShadow = "0 0 15px #0ff";
         });
     }
-
-    
+ 
     const registrationForm = document.querySelector("form");
 
     if (registrationForm) {
