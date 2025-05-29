@@ -5,8 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
         rulesSection.addEventListener("mouseover", function () {
             rulesSection.style.boxShadow = "0 0 25px #f0f";
         });
-
-        rulesSection.addEventListener("mouseout", function () {
+     rulesSection.addEventListener("mouseout", function () {
             rulesSection.style.boxShadow = "0 0 15px #0ff";
         });
     }
