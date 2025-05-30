@@ -82,7 +82,6 @@
             <p>Click anywhere to view the page</p>
         </div>
     </div>
-
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const video = document.getElementById("tournamentVideo");
@@ -96,7 +95,8 @@
                 document.body.removeEventListener("click", startVideo);
             });
 
-            video.addEventListener("ended", () => {
+          
+ video.addEventListener("ended", () => {
                 playCount++;
                 if (playCount < 3) {
                     video.play();
